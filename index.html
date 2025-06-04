@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body class="bodyCodeEditor">
+    <header>
+      <img src="images/Logo.png" alt="Logo" class="logoImage" />
+      <input type="text" placeholder="Busque por algo" class="inputSearch" />
+      <div class="profile">
+        <img src="images/perfil.jpg" alt="" class="imageProfile" />
+        <span id="author">Harry</span>
+      </div>
+    </header>
+    <nav>
+      <span>menu</span>
+      <div class="navItem" id="code">
+        <span class="material-symbols-outlined icon"> code_off </span>
+        <p>Editor de código</p>
+      </div>
+      <div class="navItem" id="community">
+        <span class="material-symbols-outlined icon opacityBackground">
+          groups
+        </span>
+        <p class="opacityParagraph">Comunidade</p>
+      </div>
+    </nav>
+    <main>
+      <div class="containerCardsCodeEditor">
+        <div class="containerCodeEditor">
+          <div class="backgroundCode">
+            <div class="code">
+              <div class="containerBalls">
+                <div class="ball" style="background-color: #ff5f56"></div>
+                <div class="ball" style="background-color: #ffbd2e"></div>
+                <div class="ball" style="background-color: #27c93f"></div>
+              </div>
+              <div class="textareaHighlight">
+                <textarea spellcheck="false"></textarea>
+                <pre class="none"><code id="highlight"></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="buttonHighlight">
+          <p>Visualizar com o highlight</p>
+        </button>
+      </div>
+      <div class="containerCardsCommunity hidden"></div>
+    </main>
+
+    <aside class="asideCodeEditor">
+      <div class="containerProject">
+        <span>Seu projeto</span>
+        <div class="containerProjectName">
+          <input
+            id="nameProject"
+            type="text"
+            placeholder="Nome do seu projeto"
+          />
+        </div>
+        <div class="containerProjectDescription">
+          <input
+            id="descriptionProject"
+            type="text"
+            placeholder="Descrição do seu projeto"
+          />
+        </div>
+      </div>
+      <div class="containerProject">
+        <span>Personalização</span>
+        <div class="select">
+          <select id="select">
+            <option id="javascript" value="javascript">JavaScript</option>
+            <option id="html" value="html">HTML</option>
+            <option id="css" value="css">CSS</option>
+          </select>
+        </div>
+        <div class="borderButton">
+          <div onclick="changeColor()" class="button"></div>
+        </div>
+      </div>
+      <button class="buttonSaveProject" id="saveProject">Salvar projeto</button>
+    </aside>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
