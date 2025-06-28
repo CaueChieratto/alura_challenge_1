@@ -81,4 +81,4 @@ Desenvolvido como parte de um desafio da Alura.
 ## Extras
 
 - O gerenciamento de tarefas e funcionalidades foi realizado utilizando cards no Trello.
-- O design da interface foi planejado e prototipado no
+- O design da interface foi planejado e prototipado no figma e disponibilizado pela alura
